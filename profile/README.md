@@ -83,9 +83,30 @@ A Comparison Distributed Systems before and after using Kubernetes for Smart Far
 
 ~~$ cd thomas~~
 
+
+💻 **Coding & Github message convention**  
+##### Conding convention
+- Variable name: caMel
+- Class name: PasCal
+- Branch name: ke-bab
+
+##### Github message convention
+- [ADD]: When you add new functional codes 
+- [FIX]: When you fix some errors
+- [DEL]: When you remove functional codes
+- [RFT]: When you refactor codes
+- [CHO]: When you do chore such as moving some files 
+- [DOC]: When you write docs  
+
+ex)  
+git commit -m "[ADD] #(이슈번호) - add a login page"  
+git commit -m "[DEL] #(이슈번호) - delete a login page"  
+git commit -m "[DOC] #(이슈번호) - write a README.md"  
+
+
 👨‍👩‍👧‍👧 **Collaborator**
 
-👩‍💻Sungjin Park
+🧑‍💻Sungjin Park
 
 -Chunbuk National University
 
@@ -125,7 +146,7 @@ A Comparison Distributed Systems before and after using Kubernetes for Smart Far
 
 -[https://github.com/iamhge](https://github.com/iamhge)
 
-Minji Kim
+👩‍💻Minji Kim
 
 -Jeju National University
 
