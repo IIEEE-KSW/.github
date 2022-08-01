@@ -37,15 +37,16 @@ Performance Evaluation of Containerized Systems before and after using Kubernete
 
 🏛 **System Overview**
 
-![new-system-architecture](https://user-images.githubusercontent.com/77658361/170851189-5a318b33-27a4-4b6d-9b25-6699d9230cad.png)
+![system-architecture](https://user-images.githubusercontent.com/42757774/182229585-ab2bb044-4714-4048-9c89-dab665c109f1.png)
 
-1. The farm data is transmitted to the gateway through LoRa communication.
 
-- Due to the time constraints, it is impossible to build own LoRaWAN. The real farm data comes from only one farm, and the rest comes from Openweather API. However, the settings from the API are different from those from the real farm environment because the API communicates with Wifi. Therefore, LoRa communication is performed using ESP32 to set and simulate the same as the real farm environment.
+1. The farm data from Openweather API server is transmitted to the gateway through a device, ESP LoRa 32.
 
-2. The gateway sends the data to Chirpstack server which is a network server supporting LoRa communication.
+- The settings from the API are different from the real farm environment because the API communicates with Wifi. Therefore, LoRa communication is performed using ESP32 to set and simulate the same as the real farm environment.
 
-3. The data arrives in the Cloud from the Chirpstack server using HTTP protocol.
+2. The LoRa gateway by SENET sends the data to LoRaWAN server which is a network server supporting LoRa communication.
+
+3. The data arrives in the Cloud from the LoRaWAN server using HTTP protocol.
 
 4. The master node continuously monitors the worker node and self-healing when a problem occurs. In addiction, as the overload occurs, the load is distributed by auto-scaling.
 
